@@ -19,6 +19,8 @@
     <string name="Person">Profile</string>
     <string name="CourseName">نام درس</string>
     <string name="HomeTextTitle">گزارش ضرایب محاسبه شده</string>
+    <string name="generate_and_save">نمایش و ذخیره</string>
+    <string name="genearate"> ذخیره</string>
 
 
 </resources>

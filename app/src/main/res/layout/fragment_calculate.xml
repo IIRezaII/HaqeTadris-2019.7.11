@@ -15,27 +15,25 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.665"/>
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintHorizontal_bias="0.492" app:layout_constraintVertical_bias="0.985"/>
     <EditText
 
             android:id="@+id/tvStuNumber"
             android:hint="@string/stuNumber"
             style="@style/EditText"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.029"
-            app:layout_constraintVertical_bias="0.665"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.985"/>
     <EditText
 
             android:id="@+id/tvCourseName"
@@ -48,14 +46,13 @@
             android:layout_width="125dp"
             android:layout_height="45dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.97" app:layout_constraintVertical_bias="0.665"/>
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup" app:layout_constraintVertical_bias="0.985"/>
     <TextView
             android:id="@+id/tvResult"
 
@@ -65,11 +62,11 @@
             android:textSize="100sp"
             android:layout_width="268dp"
             android:layout_height="230dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.291"
-            android:layout_marginTop="8dp" app:layout_constraintHorizontal_bias="0.496"/>
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintBottom_toBottomOf="@+id/textbackground"
+            app:layout_constraintTop_toTopOf="@+id/textbackground" app:layout_constraintVertical_bias="0.609"/>
     <TextView
             android:id="@+id/textbackground"
             android:background="@drawable/calculate_result_textview_background"
@@ -79,11 +76,12 @@
             android:textSize="100sp"
             android:layout_width="match_parent"
             android:layout_height="312dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.209"
-            android:layout_marginTop="8dp"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvUnit" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.74"/>
 
     <RadioGroup
             android:orientation="horizontal"
@@ -91,8 +89,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.782">
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="0.997" android:id="@+id/radioGroup">
 
         <RadioButton
                 android:id="@+id/proRadio"
