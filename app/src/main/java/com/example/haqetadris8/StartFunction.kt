@@ -41,4 +41,24 @@ class StartFunction {
         return newUnit
     }
 
+    fun masterStart(stuNumber : Int, unit: Int) : Double {
+
+        val newUnit :Double
+
+        while (stuNumber in 7..25) {
+            newUnit = unit.toDouble()
+            return newUnit
+        }
+
+        if (stuNumber > 25){
+            newUnit = Calculate().masterDegreeMoreThan25(unit, stuNumber)
+        }
+        else {
+            newUnit = Calculate().masterDegreeUnder7(unit, stuNumber)
+        }
+
+        return newUnit
+    }
+
+
 }

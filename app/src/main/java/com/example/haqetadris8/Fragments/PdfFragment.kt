@@ -24,7 +24,7 @@ import com.itextpdf.text.pdf.PdfWriter
 import kotlinx.android.synthetic.main.fragment_calculate.*
 import kotlinx.android.synthetic.main.fragment_pdf.*
 import kotlinx.android.synthetic.main.fragment_pdf.view.*
-import kotlinx.android.synthetic.main.fragment_pdf.view.textEt
+
 import java.io.FileOutputStream
 import java.util.*
 

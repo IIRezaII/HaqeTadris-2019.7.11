@@ -51,7 +51,8 @@ class CalculateFragment : Fragment() {
         model = ViewModelProviders.of(activity!!).get(Communicator::class.java)
 
         val CourseName = view.findViewById<View>(R.id.tvCourseName) as EditText
-        //listener onClick
+
+
             view.button.setOnClickListener {
 
                 if (view.tvStuNumber.text.isNullOrEmpty() || view.tvUnit.text.isNullOrEmpty()) {
@@ -79,8 +80,18 @@ class CalculateFragment : Fragment() {
                     view.findViewById<TextView>(R.id.tvResult).text = finalValue.toString()
 
                 }
+
+                if (view.masterRadio.isChecked) {
+
+                    val finalValue: Double = StartFunction().masterStart(stuNumText, unitText)
+                    view.findViewById<TextView>(R.id.tvResult).text = finalValue.toString()
+
+                }
+
+
+
                 model!!.setMsgCommunicator("نام درس : " + CourseName.text.toString()  + "\n" +
-                                 "تعداد دانش آموزان : " + tvStuNumber.text.toString() + "\n" +
+                                 "تعداد دانش جویان : "  + tvStuNumber.text.toString() + "\n" +
                                           "واحد درس : " + tvUnit.text.toString()      + "\n" +
                                  "ضریب حق تدریس شما : " + tvResult.text.toString()    + "\n"
                                           )
