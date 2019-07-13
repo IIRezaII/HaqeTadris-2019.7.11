@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var homeFragment: HomeFragment
     lateinit var calculationFragment: CalculateFragment
     lateinit var pdfFragment: PdfFragment
-    lateinit var personFragment: PersonFragment
+    lateinit var calculatorFragment: CalculatorFragment
     lateinit var shareFragment: ShareFragment
 
 
@@ -76,12 +76,12 @@ class MainActivity : AppCompatActivity() {
                         .commit()
 
                 }
-                R.id.person-> {
+                R.id.calculator-> {
 
-                personFragment = PersonFragment()
+                    calculatorFragment = CalculatorFragment()
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.frame_layout, personFragment)
+                        .replace(R.id.frame_layout, calculatorFragment)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit()
 

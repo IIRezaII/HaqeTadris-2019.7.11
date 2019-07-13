@@ -13,9 +13,9 @@
             android:title="@string/Calculation"
             android:icon="@drawable/ic_calculation"/>
     <item
-            android:id="@+id/person"
-            android:title="@string/Person"
-            android:icon="@drawable/ic_person"/>
+            android:id="@+id/calculator"
+            android:title="@string/calculator"
+            android:icon="@drawable/ic_calculator"/>
     <item
             android:id="@+id/share"
             android:title="@string/Share"

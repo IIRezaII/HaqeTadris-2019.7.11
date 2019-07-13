@@ -10,6 +10,7 @@
 
     <EditText
             android:id="@+id/tvUnit"
+            android:fontFamily="@font/far_mitra"
             android:hint="@string/Unit"
             style="@style/EditText"
             android:layout_marginEnd="8dp"
@@ -21,6 +22,7 @@
     <EditText
 
             android:id="@+id/tvStuNumber"
+            android:fontFamily="@font/far_mitra"
             android:hint="@string/stuNumber"
             style="@style/EditText"
             android:layout_marginTop="8dp"
@@ -34,6 +36,7 @@
 
             android:id="@+id/tvCourseName"
             android:hint="@string/CourseName"
+            android:fontFamily="@font/far_mitra"
             android:gravity="center"
             android:background="@drawable/edit_text_background"
             android:textColor="@color/red_active"
@@ -51,7 +54,7 @@
             app:layout_constraintHorizontal_bias="0.0"/>
     <TextView
             android:id="@+id/tvResult"
-
+            android:fontFamily="@font/far_mitra"
             android:textAlignment="center"
             android:textColor="@color/green_bg_light"
             android:text=""
@@ -91,6 +94,7 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.894">
 
         <RadioButton
+                android:fontFamily="@font/far_mitra"
                 android:id="@+id/proRadio"
                 style="@style/EditText"
                 android:textAlignment="center"
@@ -104,6 +108,7 @@
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.935"
                 app:layout_constraintVertical_bias="0.749"/>
         <RadioButton
+                android:fontFamily="@font/far_mitra"
                 android:id="@+id/genRadio"
                 style="@style/EditText"
                 android:textAlignment="center"
@@ -118,6 +123,7 @@
                 app:layout_constraintVertical_bias="0.815"/>
 
         <RadioButton
+                android:fontFamily="@font/far_mitra"
                 android:id="@+id/masterRadio"
                 style="@style/EditText"
                 android:textAlignment="center"
@@ -137,6 +143,7 @@
 
     <Button
             android:text="@string/Calculation"
+            android:fontFamily="@font/far_mitra"
             android:id="@+id/button"
             style="@style/CalculateButton"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange_active"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="end"
+            android:background="@color/blue_grey_active"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textSize="40sp"/>
+
+    <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:textColor="@color/orange_active"
+            android:background="@color/blue_grey_active"
+            android:gravity="end"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="30sp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="419dp"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tvClear"
+                    style="@style/ActionButttonStyle"
+                    android:text="CE"/>
+            <TextView
+                    android:id="@+id/tvOpenP"
+                    style="@style/ActionButttonStyle"
+                    android:text="("/>
+            <TextView
+                    android:id="@+id/tvCloseP"
+                    style="@style/ActionButttonStyle"
+                    android:text=")"/>
+            <TextView
+                    android:id="@+id/tvDevide"
+                    style="@style/ActionButttonStyle"
+                    android:text="/"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv7"
+                    style="@style/NumberButttonStyle"
+                    android:text="7"/>
+            <TextView
+                    android:id="@+id/tv8"
+                    style="@style/NumberButttonStyle"
+                    android:text="8"/>
+            <TextView
+                    android:id="@+id/tv9"
+                    style="@style/NumberButttonStyle"
+                    android:text="9"/>
+            <TextView
+                    android:id="@+id/tvMultiplication"
+                    style="@style/ActionButttonStyle"
+                    android:text="*"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv4"
+                    style="@style/NumberButttonStyle"
+                    android:text="4"/>
+            <TextView
+                    android:id="@+id/tv5"
+                    style="@style/NumberButttonStyle"
+                    android:text="5"/>
+            <TextView
+                    android:id="@+id/tv6"
+                    style="@style/NumberButttonStyle"
+                    android:text="6"/>
+            <TextView
+                    android:id="@+id/tvMinus"
+                    style="@style/ActionButttonStyle"
+                    android:text="-"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv1"
+                    style="@style/NumberButttonStyle"
+                    android:text="1"/>
+            <TextView
+                    android:id="@+id/tv2"
+                    style="@style/NumberButttonStyle"
+                    android:text="2"/>
+            <TextView
+                    android:id="@+id/tv3"
+                    style="@style/NumberButttonStyle"
+                    android:text="3"/>
+            <TextView
+                    android:id="@+id/tvPlus"
+                    style="@style/ActionButttonStyle"
+                    android:text="+"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tvDot"
+                    style="@style/NumberButttonStyle"
+                    android:text="."/>
+            <TextView
+                    android:id="@+id/tvZero"
+                    style="@style/NumberButttonStyle"
+                    android:text="0"/>
+            <ImageView
+                    android:id="@+id/tvDelete"
+                    style="@style/NumberButttonStyle"
+                    android:text="Del"
+                    android:src="@drawable/backspace"
+                    android:scaleType="center"/>
+            <TextView
+                    android:id="@+id/tvEquals"
+                    style="@style/ActionButttonStyle"
+                    android:text="="/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

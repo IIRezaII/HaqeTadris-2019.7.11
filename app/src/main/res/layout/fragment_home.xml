@@ -10,6 +10,7 @@
     <TextView android:layout_width="match_parent"
               android:layout_height="59dp"
               android:text="@string/HomeTextTitle"
+              android:fontFamily="@font/far_mitra"
               android:textAlignment="center"
               android:textColor="@color/red_active"
               android:textSize="30sp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"

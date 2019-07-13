@@ -36,4 +36,6 @@ dependencies {
     implementation 'org.jetbrains.anko:anko-common:0.9'
     implementation 'com.itextpdf:itextg:5.5.10'
     implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'net.objecthunter:exp4j:0.4.8'
+
 }

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HaqeTadris8</string>
 
-    <string name="Result"> </string>
+    <string name="Result"></string>
     <string name="Unit">واحد درس</string>
     <string name="stuNumber">تعداد دانشجو</string>
     <string name="button">=</string>
@@ -11,16 +11,19 @@
     <string name="Master">ارشد</string>
     <string name="General">عمومی</string>
     <string name="associate">کارشناسی</string>
-    <string name="anounceResult">ضریب حق تدریس </string>
+    <string name="anounceResult">ضریب حق تدریس</string>
     <string name="Home">خانه</string>
     <string name="PDF">PDF</string>
     <string name="Calculation">محاسبه</string>
     <string name="Share">اشتراک</string>
-    <string name="Person">Profile</string>
+    <string name="calculator">ماشین حساب</string>
     <string name="CourseName">نام درس</string>
     <string name="HomeTextTitle">گزارش ضرایب محاسبه شده</string>
     <string name="generate_and_save">نمایش و ذخیره</string>
-    <string name="genearate"> ذخیره</string>
+    <string name="genearate">ذخیره</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
