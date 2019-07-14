@@ -88,7 +88,7 @@ class CalculateFragment : Fragment() {
 
                 }
 
-
+                //add persian support
 
                 model!!.setMsgCommunicator("نام درس : " + CourseName.text.toString()  + "\n" +
                                  "تعداد دانش جویان : "  + tvStuNumber.text.toString() + "\n" +

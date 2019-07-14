@@ -9,6 +9,7 @@
 
     <EditText
             android:id="@+id/textEt"
+            android:fontFamily="@font/far_mitra"
             android:layout_width="match_parent"
             android:layout_height="400dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginBottom="8dp"

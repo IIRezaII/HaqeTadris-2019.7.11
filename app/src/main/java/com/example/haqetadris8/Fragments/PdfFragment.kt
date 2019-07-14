@@ -56,13 +56,12 @@ class PdfFragment : Fragment() {
         return view
     }
 
-
+//set communicator
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
 
         val txt=view.findViewById<View>(R.id.textEt) as TextView
-
         val model=ViewModelProviders.of(activity!!).get(Communicator::class.java)
 
         model.message.observe(this, object :  android.arch.lifecycle.Observer<Any> {
@@ -104,11 +103,6 @@ class PdfFragment : Fragment() {
         }
     }
 
-
-
-
-
-
     private fun savePDF() {
 
         //create object of Document class
@@ -146,7 +140,6 @@ class PdfFragment : Fragment() {
         }
 
     }
-
 
     //handle permission result
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray){
