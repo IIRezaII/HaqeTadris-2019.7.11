@@ -24,6 +24,10 @@
     <color name="gery_inactive">#e0e0e0</color>
 
     <color name="default_inactive">#78909c</color>
+    <color name="dark">#1D242E</color>
+    <color name="darkBack">#020E35</color>
+    <color name="startEndColor">#00334D</color>
+    <color name="centercolor">#00E3FF</color>
 
     <color name="red_bg_light">#ffebee</color>
     <color name="purple_bg_light">#f3e5f5</color>

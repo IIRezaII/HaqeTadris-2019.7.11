@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item>
         <shape  android:shape="rectangle"
                 android:useLevel="false"
                 android:thickness="3dp">
 
 
-            <gradient
-                    android:startColor="#037CC0"
-                    android:centerColor="@color/centercolor"
-                    android:endColor="#037CC0"/>
+            <solid android:color="@color/centercolor"/>
 
             <size    android:width="130dp"
                      android:height="30dp"/>
@@ -20,5 +16,4 @@
         </shape>
 
     </item>
-
 </selector>

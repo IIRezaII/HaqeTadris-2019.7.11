@@ -5,16 +5,16 @@
     <item>
         <shape android:shape="ring"
                android:useLevel="false"
-               android:thickness="8dp">
+               android:thickness="10dp">
 
             <corners android:radius="40dp"/>
             <solid   android:color="@color/colorAccent"/>
             <size    android:height="350dp"
                      android:width="350dp"/>
             <gradient
-                android:startColor="@color/colorAccent"
-                android:centerColor="@color/red_active"
-                android:endColor="@color/colorAccent"/>
+                android:startColor="@color/startEndColor"
+                android:centerColor="@color/centercolor"
+                android:endColor="@color/startEndColor"/>
 
 
         </shape>

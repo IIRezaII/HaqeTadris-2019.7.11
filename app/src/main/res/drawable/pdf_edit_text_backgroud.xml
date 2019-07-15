@@ -6,18 +6,16 @@
                 android:useLevel="false"
                 android:thickness="3dp">
 
+            <solid   android:color="@color/orange_bg_light"/>
 
-            <gradient
-                    android:startColor="#037CC0"
-                    android:centerColor="@color/centercolor"
-                    android:endColor="#037CC0"/>
 
             <size    android:width="130dp"
                      android:height="30dp"/>
-            <corners android:radius="700dp"/>
+            <corners android:radius="5dp"/>
 
 
         </shape>
+
 
     </item>
 

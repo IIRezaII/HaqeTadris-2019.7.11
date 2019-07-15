@@ -24,12 +24,28 @@
     <style name="CalculateButton">
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/calculate_button_background</item>
-        <item name="android:textColor">@color/red_bg_light</item>
+        <item name="android:textColor">@color/dark</item>
         <item name="android:layout_height">45dp</item>
         <item name="android:layout_width">125dp</item>
         <item name="android:textSize">20sp</item>
+    </style>
 
+    <style name="PdfButton">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pdf_button_background</item>
+        <item name="android:textColor">@color/gery_inactive</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">125dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 
+    <style name="ShareButton">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/share_button_background</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">125dp</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="ActionButttonStyle">
@@ -52,6 +68,16 @@
         <item name="android:textColor">@color/purple_bg_light</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">0.5dp</item>
+
+    </style>
+
+
+    <style name="EditTextPdf">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@drawable/pdf_edit_text_backgroud</item>
+        <item name="android:fontFamily">@font/far_mitra</item>
+
 
     </style>
 

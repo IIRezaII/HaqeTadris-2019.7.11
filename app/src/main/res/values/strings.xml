@@ -12,7 +12,8 @@
     <string name="General">عمومی</string>
     <string name="associate">کارشناسی</string>
     <string name="anounceResult">ضریب حق تدریس</string>
-    <string name="Home">خانه</string>
+    <string name="Home">گزارش</string>
+    <string name="pdfEtHint">برای تغییر متن این کادر را لمس کنید</string>
     <string name="PDF">PDF</string>
     <string name="Calculation">محاسبه</string>
     <string name="Share">اشتراک</string>

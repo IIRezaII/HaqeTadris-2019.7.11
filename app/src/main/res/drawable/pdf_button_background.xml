@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item>
         <shape  android:shape="rectangle"
                 android:useLevel="false"
@@ -8,9 +7,9 @@
 
 
             <gradient
-                    android:startColor="#037CC0"
-                    android:centerColor="@color/centercolor"
-                    android:endColor="#037CC0"/>
+                    android:startColor="#48179E"
+                    android:centerColor="#1405A0"
+                    android:endColor="#48179E"/>
 
             <size    android:width="130dp"
                      android:height="30dp"/>

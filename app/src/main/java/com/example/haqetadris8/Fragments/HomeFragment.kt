@@ -37,7 +37,7 @@ class HomeFragment : Fragment() {
         return view
     }
     //for getting strings from calculate fragment
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+   /* override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val txt = view.findViewById<View>(R.id.textEt) as TextView
@@ -65,5 +65,5 @@ class HomeFragment : Fragment() {
 
 
 
-    }
+    }*/
 }
