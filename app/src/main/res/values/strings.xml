@@ -22,6 +22,7 @@
     <string name="HomeTextTitle">گزارش ضرایب محاسبه شده</string>
     <string name="generate_and_save">نمایش و ذخیره</string>
     <string name="genearate">ذخیره</string>
+    <string name="emptyList">شما هنوز مقداری را محاسبه نکرده اید</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

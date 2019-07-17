@@ -36,7 +36,7 @@ class CalculateFragment : Fragment() {
 
     //for sharedPrefernces
     lateinit var editTextCourseName :EditText
-    lateinit var editTextcourseCoefficient :EditText
+    lateinit var editTextcourseCoefficient :TextView
 
 
 
@@ -99,7 +99,7 @@ class CalculateFragment : Fragment() {
                 //add persian support
 
                 model!!.setMsgCommunicator("نام درس : " + CourseName.text.toString()  + "\n" +
-                                 "تعداد دانش جویان : "  + tvStuNumber.text.toString() + "\n" +
+                                 "تعداد دانشجویان : "  + tvStuNumber.text.toString() + "\n" +
                                           "واحد درس : " + tvUnit.text.toString()      + "\n" +
                                  "ضریب حق تدریس شما : " + tvResult.text.toString()    + "\n"
                                           )
@@ -111,12 +111,7 @@ class CalculateFragment : Fragment() {
             }
 
     }
-    /*private fun retriveData(){
-        val mypref = activity!!.getSharedPreferences("mypref" , Context.MODE_PRIVATE)
 
-        val courseName = mypref.getString("CourseName", "")
-        val CourseCoefficient = mypref.getString("CourseCoefficient", "")
-    }*/
 
     private fun saveData() {
         if (editTextCourseName.text.isEmpty()){
@@ -129,15 +124,15 @@ class CalculateFragment : Fragment() {
             editTextCourseName.error = "لطفا ضریب را محاسبه کنید"
             return
         }
+
+
         val mypref = activity!!.getSharedPreferences("mypref" , Context.MODE_PRIVATE)
 
-        val editor = mypref.edit()
 
-        editor.putString("CourseName", editTextCourseName.text.toString())
-        editor.putString("CourseCoefficient", editTextCourseName.text.toString())
+        //courseName-CourseCoefficient|courseName-CourseCoefficient
+        mypref.getString("CourseData","")
+        mypref.edit().putString("CourseData", "${editTextCourseName.text} - ${editTextcourseCoefficient.text}|${mypref.getString("CourseData","")}").apply()
 
-
-        editor.apply()
 
     }
 

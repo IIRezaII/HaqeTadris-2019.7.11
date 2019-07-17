@@ -6,11 +6,11 @@
                 android:useLevel="false"
                 android:thickness="3dp">
 
-
-            <gradient
+        <solid android:color="@color/centercolor"/>
+           <!-- <gradient
                     android:startColor="#037CC0"
                     android:centerColor="@color/centercolor"
-                    android:endColor="#037CC0"/>
+                    android:endColor="#037CC0"/>-->
 
             <size    android:width="130dp"
                      android:height="30dp"/>

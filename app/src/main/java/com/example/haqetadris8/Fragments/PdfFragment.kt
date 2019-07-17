@@ -19,11 +19,19 @@ import android.widget.Toast
 import com.example.haqetadris8.Communicator
 import com.example.haqetadris8.R
 import com.itextpdf.text.Document
+import com.itextpdf.text.Font
+import com.itextpdf.text.Font.*
+import com.itextpdf.text.*
 import com.itextpdf.text.Paragraph
+
+import com.itextpdf.text.pdf.BaseFont
+import com.itextpdf.text.pdf.BaseFont.createFont
 import com.itextpdf.text.pdf.PdfWriter
 import kotlinx.android.synthetic.main.fragment_calculate.*
 import kotlinx.android.synthetic.main.fragment_pdf.*
 import kotlinx.android.synthetic.main.fragment_pdf.view.*
+import org.w3c.dom.Text
+
 
 import java.io.FileOutputStream
 import java.util.*
@@ -124,14 +132,16 @@ class PdfFragment : Fragment() {
             //get text from edit text and text view
             val mText = view!!.textEt.text.toString()
 
+
                 //create Paragraph
-                mDoc.add(Paragraph(mText))
+            mDoc.add(Paragraph(mText))
+
+                //set font
+            //mText.setFont(R.font.far_mitra)
                 //close Document
                 mDoc.close()
                 //show file saved message with file and path
                 Toast.makeText(activity, "$mFileName.pdf\nis saved to\n$mFilePath", Toast.LENGTH_SHORT).show()
-
-
 
         }
         catch (e : Exception){

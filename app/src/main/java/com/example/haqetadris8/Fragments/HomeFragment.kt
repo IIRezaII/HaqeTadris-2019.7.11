@@ -35,29 +35,23 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
         val mypref = activity!!.getSharedPreferences("mypref" , Context.MODE_PRIVATE)
-        val arrayList = ArrayList<String>()
-        val lv = view.findViewById<ListView>(R.id.home_listView)
-        val adapter = ArrayAdapter<String>(activity!!, android.R.layout.simple_list_item_1, arrayList)
-        lv.adapter = adapter
-        view.button.setOnClickListener {
+        val data = mypref.getString("CourseData",null)?.split("|")
 
-            val courseName = mypref.getString("CourseName", "")
-            arrayList.add(courseName)
-            adapter.notifyDataSetChanged()
+        data?:let{
+            Toast.makeText(context,R.string.emptyList,Toast.LENGTH_SHORT).show()
+        }
+
+        data?.let {
+            val lv = view.findViewById<ListView>(R.id.home_listView)
+            val adapter = ArrayAdapter<String>(activity!!, android.R.layout.simple_list_item_1, it)
+            lv.adapter = adapter
 
         }
 
+        return view
     }
-
-
-
 
 
 }
