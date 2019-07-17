@@ -2,6 +2,7 @@ package com.example.haqetadris8.Fragments
 
 
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -36,34 +37,28 @@ class HomeFragment : Fragment() {
 
         return view
     }
-    //for getting strings from calculate fragment
-   /* override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val txt = view.findViewById<View>(R.id.textEt) as TextView
-        val model = ViewModelProviders.of(activity!!).get(Communicator::class.java)
-
-        model.message.observe(this, object : android.arch.lifecycle.Observer<Any> {
-            override fun onChanged(o: Any?) {
-                txt.text = o!!.toString()
-            }
-        })
-    //for creating items of list view based on user input
+        val mypref = activity!!.getSharedPreferences("mypref" , Context.MODE_PRIVATE)
         val arrayList = ArrayList<String>()
         val lv = view.findViewById<ListView>(R.id.home_listView)
         val adapter = ArrayAdapter<String>(activity!!, android.R.layout.simple_list_item_1, arrayList)
-        lv.setAdapter(adapter)
-        var result :String = ""
-
+        lv.adapter = adapter
         view.button.setOnClickListener {
 
-            result = view.textEt.text.toString()
-            arrayList.add(result)
+            val courseName = mypref.getString("CourseName", "")
+            arrayList.add(courseName)
             adapter.notifyDataSetChanged()
 
         }
 
+    }
 
 
-    }*/
+
+
+
 }
+

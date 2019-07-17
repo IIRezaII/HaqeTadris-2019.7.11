@@ -2,7 +2,9 @@ package com.example.haqetadris8.Fragments
 
 
 import android.arch.lifecycle.ViewModelProviders
+import android.content.Context
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -32,6 +34,11 @@ class CalculateFragment : Fragment() {
 
     private var model: Communicator?=null
 
+    //for sharedPrefernces
+    lateinit var editTextCourseName :EditText
+    lateinit var editTextcourseCoefficient :EditText
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,7 +58,8 @@ class CalculateFragment : Fragment() {
         model = ViewModelProviders.of(activity!!).get(Communicator::class.java)
 
         val CourseName = view.findViewById<View>(R.id.tvCourseName) as EditText
-
+        editTextCourseName = view.findViewById(R.id.tvCourseName)
+        editTextcourseCoefficient = view.findViewById(R.id.tvResult)
 
             view.button.setOnClickListener {
 
@@ -96,14 +104,44 @@ class CalculateFragment : Fragment() {
                                  "ضریب حق تدریس شما : " + tvResult.text.toString()    + "\n"
                                           )
 
+                saveData()
+
 
 
             }
 
+    }
+    /*private fun retriveData(){
+        val mypref = activity!!.getSharedPreferences("mypref" , Context.MODE_PRIVATE)
+
+        val courseName = mypref.getString("CourseName", "")
+        val CourseCoefficient = mypref.getString("CourseCoefficient", "")
+    }*/
+
+    private fun saveData() {
+        if (editTextCourseName.text.isEmpty()){
+
+            editTextCourseName.error = "لطفا نام درس را وارد کنید"
+            return
+        }
+        if (editTextcourseCoefficient.text.isEmpty()){
+
+            editTextCourseName.error = "لطفا ضریب را محاسبه کنید"
+            return
+        }
+        val mypref = activity!!.getSharedPreferences("mypref" , Context.MODE_PRIVATE)
+
+        val editor = mypref.edit()
+
+        editor.putString("CourseName", editTextCourseName.text.toString())
+        editor.putString("CourseCoefficient", editTextCourseName.text.toString())
 
 
+        editor.apply()
 
     }
+
+
 }
 
 
