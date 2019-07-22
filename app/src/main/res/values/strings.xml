@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HaqeTadris8</string>
+    <string name="app_name">Haqe Tadris</string>
 
     <string name="Result"></string>
     <string name="Unit">واحد درس</string>
@@ -23,9 +23,9 @@
     <string name="generate_and_save">نمایش و ذخیره</string>
     <string name="genearate">ذخیره</string>
     <string name="emptyList">شما هنوز مقداری را محاسبه نکرده اید</string>
+    <string name="Splash">حق تدریس</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 
 </resources>
